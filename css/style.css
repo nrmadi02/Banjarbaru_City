@@ -1,0 +1,337 @@
+@import url("https://fonts.googleapis.com/css?family=Quicksand");
+
+* {
+	box-sizing: border-box;
+}
+
+body {
+	margin: 0;
+	padding: 10px;
+	font-family: "Quicksand", sans-serif;
+	background-color: white;
+}
+
+/* header */
+header nav {
+	padding: 20px 40px 20px 60px;
+	background-color: #dfdcd488;
+	border-radius: 20px;
+}
+
+header nav li {
+	display: inline;
+	list-style-type: none;
+	margin-right: 20px;
+}
+
+header nav a {
+	font-size: 18px;
+	font-weight: 400;
+	text-decoration: none;
+	color: white;
+}
+
+header nav a:hover {
+	color: black;
+}
+
+.container-header {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	background-color: #ff7c00;
+	align-items: center;
+	padding: 20px;
+	border-radius: 30px;
+}
+
+.header-title {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	color: white;
+	text-align: center;
+}
+
+.header-title p {
+	font-size: 1.5em;
+}
+
+.header-img {
+	width: 100px;
+	margin-right: 30px;
+}
+
+.slogan {
+	font-weight: bold;
+}
+
+/* main */
+main {
+	overflow: auto;
+}
+
+main article {
+	padding: 10px 20px 20px 20px;
+	background-color: #1ecce3;
+	border-radius: 20px;
+	margin-bottom: 10px;
+	color: white;
+}
+
+.img-bjb {
+	width: 100%;
+	max-height: 500px;
+	object-fit: cover;
+	object-position: center;
+	border-radius: 20px;
+	border: 2px solid white;
+}
+
+.main-content {
+	/* background-color: #1ecce3;
+	border-radius: 20px; */
+	float: left;
+	width: 75%;
+}
+
+.title-main {
+	font-size: 20px;
+	font-weight: 800;
+	text-align: center;
+}
+
+.title-article {
+	text-align: center;
+	font-size: 20px;
+	font-weight: bold;
+	margin-bottom: 20px;
+}
+
+.under-title {
+	background-color: white;
+	height: 2px;
+	width: 70px;
+	margin: 0 auto;
+}
+
+.visi-misi {
+	/* display: flex;
+	flex-direction: row;
+	justify-content: space-between; */
+	overflow: auto;
+}
+
+.visi {
+	float: left;
+	width: 50%;
+}
+
+.misi {
+	float: right;
+	width: 50%;
+	padding-left: 10px;
+}
+
+.mySlides {
+	display: none;
+}
+
+.mySlides img {
+	vertical-align: middle;
+	width: 100%;
+	border: 2px solid white;
+	border-radius: 20px;
+}
+
+.photo-container {
+	max-width: 700px;
+	position: relative;
+	margin: auto;
+	border: 2px solid white;
+	border-radius: 20px;
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+	cursor: pointer;
+	position: absolute;
+	top: 50%;
+	width: auto;
+	padding: 16px;
+	margin-top: -22px;
+	color: #ff7c00;
+	font-weight: bold;
+	font-size: 20px;
+	transition: 0.6s ease;
+	border-radius: 0 3px 3px 0;
+	user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+	right: 0;
+	border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+	background-color: rgba(0, 0, 0, 0.8);
+}
+
+.text-slide {
+	color: black;
+	font-size: 20px;
+	padding: 8px 12px;
+	position: absolute;
+	bottom: 10px;
+	right: 10px;
+	width: 100%;
+	text-align: center;
+	background-color: white;
+	font-weight: bold;
+	border-radius: 20px;
+	max-width: 300px;
+}
+
+.numbertext {
+	color: black;
+	font-size: 15px;
+	padding: 8px 12px;
+	position: absolute;
+	top: 10px;
+	left: 10px;
+	font-weight: 800;
+	background-color: white;
+	max-width: 100px;
+	border-radius: 30px;
+}
+
+.dot {
+	cursor: pointer;
+	height: 15px;
+	width: 15px;
+	margin: 0 2px;
+	background-color: #3e3c49;
+	border-radius: 50%;
+	display: inline-block;
+	transition: background-color 0.6s ease;
+}
+
+.active,
+.dot:hover {
+	background-color: #ff7c00;
+	width: 30px;
+	border-radius: 10px;
+}
+
+.fade {
+	-webkit-animation-name: fade;
+	-webkit-animation-duration: 1.5s;
+	animation-name: fade;
+	animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+	from {
+		opacity: 0.4;
+	}
+	to {
+		opacity: 1;
+	}
+}
+
+@keyframes fade {
+	from {
+		opacity: 0.4;
+	}
+	to {
+		opacity: 1;
+	}
+}
+/* aside */
+main aside {
+	float: right;
+	width: 25%;
+	margin-bottom: 10px;
+	padding-left: 20px;
+	position: fixed;
+	right: 10px;
+}
+.title-profile {
+	font-weight: 800;
+	font-size: 20px;
+	text-align: center;
+}
+
+.profile-img {
+	width: 100px;
+	height: 100px;
+	border-radius: 50%;
+	object-fit: cover;
+	object-position: top;
+}
+
+.profile-container {
+	background-color: #3e3c49;
+	padding: 10px;
+	border-radius: 20px;
+	color: white;
+	text-align: center;
+}
+
+.detail-profile {
+	font-size: 12px;
+	text-align: left;
+	margin-top: 10px;
+	border: 1px solid white;
+	border-radius: 5px;
+	padding: 5px;
+}
+
+.sosmed-profile {
+	background-color: white;
+	margin-top: 10px;
+	padding: 5px;
+	border-radius: 10px;
+}
+
+.sosmed-profile a {
+	margin-right: 5px;
+}
+/* footer */
+footer {
+	background-color: #dfdcd4;
+	text-align: center;
+	padding: 10px;
+	border-radius: 20px;
+}
+
+.sticky {
+	position: fixed;
+	top: 10px;
+	background-color: #ff7b00bd;
+	z-index: 1;
+}
+/* responsive */
+@media screen and (max-width: 700px) {
+	.container-header {
+		flex-direction: column;
+	}
+	header nav {
+		margin-top: 10px;
+	}
+	header nav {
+		padding: 20px 20px 20px 40px;
+	}
+	main .main-content,
+	main aside {
+		width: 100%;
+		padding: 0;
+	}
+	main aside {
+		position: sticky;
+	}
+}
